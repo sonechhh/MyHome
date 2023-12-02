@@ -1,4 +1,4 @@
-package home
+package main
 
 import (
 	"MyHome/home/family"
