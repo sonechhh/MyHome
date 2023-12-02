@@ -1,8 +1,8 @@
-package Rooms
+package rooms
 
 import (
-	"MyHome/home/Rooms/Device"
-	"MyHome/home/Rooms/Furniture"
+	"MyHome/home/rooms/device"
+	"MyHome/home/rooms/furniture"
 	"fmt"
 )
 
@@ -12,8 +12,8 @@ type Room struct {
 	Length       float32
 	Height       float32
 	WindowsCount int
-	Devices      Device.Devices
-	Furnitures   Furniture.Furnitures
+	Devices      device.Devices
+	Furnitures   furniture.Furnitures
 }
 
 func (room Room) countSquare() float32 {

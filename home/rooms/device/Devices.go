@@ -1,4 +1,4 @@
-package Device
+package device
 
 type Devices struct {
 	DeviceArr []Device

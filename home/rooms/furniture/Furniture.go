@@ -1,7 +1,7 @@
-package Furniture
+package furniture
 
 import (
-	"MyHome/home/Rooms/Furniture/Items"
+	"MyHome/home/rooms/furniture/items"
 	"fmt"
 )
 
@@ -10,7 +10,7 @@ type Furniture struct {
 	Length float32
 	Width  float32
 	Color  string
-	Items  Items.Items
+	Items  items.Items
 }
 
 func (furniture Furniture) getFurnitureString() string {

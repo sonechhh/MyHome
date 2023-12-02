@@ -1,4 +1,4 @@
-package Family
+package family
 
 type Family struct {
 	MemberOfFamilyArr []MemberOfFamily

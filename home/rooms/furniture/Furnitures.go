@@ -1,4 +1,4 @@
-package Furniture
+package furniture
 
 type Furnitures struct {
 	FurnitureArr []Furniture
