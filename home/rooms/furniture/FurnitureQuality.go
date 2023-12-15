@@ -1,7 +1,6 @@
 package furniture
 
 import (
-	"MyHome/home/rooms/furniture/items"
 	"fmt"
 )
 
@@ -10,7 +9,6 @@ type Furniture struct {
 	Length float32
 	Width  float32
 	Color  string
-	Items  items.Items
 }
 
 func (furniture Furniture) getFurnitureString() string {

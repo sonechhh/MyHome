@@ -5,7 +5,7 @@ import (
 	"MyHome/home/rooms"
 	"MyHome/home/rooms/device"
 	"MyHome/home/rooms/furniture"
-	"MyHome/home/rooms/furniture/items"
+
 	"fmt"
 )
 
@@ -24,34 +24,34 @@ func (home Home) HomeInfo() {
 
 func Make() Home {
 	me := family.MemberOfFamily{
-		Name:               "Соня",
-		Age:                20,
-		Sex:                "Ж",
-		RealAddress:        "Волжский бульвар, 1",
-		ResidentialAddress: "Монакская, 33",
+		Name:    "Соня",
+		Age:     20,
+		Sex:     "Ж",
+		Address: "Монакская, 33",
+		Height:  164,
 	}
 
 	mom := family.MemberOfFamily{
-		Name:               "Яна",
-		Age:                43,
-		Sex:                "Ж",
-		RealAddress:        "Волжский бульвар, 1",
-		ResidentialAddress: "Миланская, 12",
+		Name:    "Яна",
+		Age:     43,
+		Sex:     "Ж",
+		Address: "Миланская, 12",
+		Height:  165,
 	}
 
 	dad := family.MemberOfFamily{
-		Name:               "Денис",
-		Age:                43,
-		Sex:                "М",
-		RealAddress:        "Волжский бульвар, 1",
-		ResidentialAddress: "Танковая, 2",
+		Name:    "Денис",
+		Age:     43,
+		Sex:     "М",
+		Address: "Танковая, 2",
+		Height:  186,
 	}
 	dog := family.MemberOfFamily{
-		Name:               "Ёся",
-		Age:                12,
-		Sex:                "М",
-		RealAddress:        "Волжский бульвар, 1",
-		ResidentialAddress: "Калмыкия -",
+		Name:    "Ёся",
+		Age:     12,
+		Sex:     "М",
+		Address: "Калмыкия -",
+		Height:  30,
 	}
 
 	MyRoomDevices := device.Devices{
@@ -167,51 +167,6 @@ func Make() Home {
 		},
 	}
 
-	MyRoomFurnituresThingsTable := items.Items{
-		[]items.Item{
-			{
-				Type: "Лапма",
-			},
-			{
-				Type: "Коллаж фотографий",
-			},
-			{
-				Type: "Коробка для мелочей",
-			},
-		},
-	}
-
-	MyRoomFurnituresThingsBed := items.Items{
-		[]items.Item{
-			{
-				Type: "Комплект плюшевых капибар",
-			},
-			{
-				Type: "Плед",
-			},
-			{
-				Type: "Гирлянда",
-			},
-		},
-	}
-
-	MyRoomFurnituresThingsCupboard := items.Items{
-		[]items.Item{
-			{
-				Type: "Книги",
-			},
-			{
-				Type: "Кисти",
-			},
-			{
-				Type: "Хаги-Ваги",
-			},
-			{
-				Type: "Стопарик из Будапешта (невыпитый)",
-			},
-		},
-	}
-
 	MyRoomFurnitures := furniture.Furnitures{
 		[]furniture.Furniture{
 			{
@@ -219,7 +174,6 @@ func Make() Home {
 				Length: 150,
 				Width:  50,
 				Color:  "Brown",
-				Items:  MyRoomFurnituresThingsTable,
 			},
 			{
 				Type:   "Комод",
@@ -238,29 +192,12 @@ func Make() Home {
 				Length: 200,
 				Width:  150,
 				Color:  "Black",
-				Items:  MyRoomFurnituresThingsBed,
 			},
 			{
 				Type:   "Стеллаж",
 				Length: 170,
 				Width:  100,
 				Color:  "Black",
-				Items:  MyRoomFurnituresThingsCupboard,
-			},
-		},
-	}
-
-	MyRoomFurnituresThingsDressingArea := items.Items{
-		[]items.Item{
-			{
-				Type: "Напольная вешалка",
-			},
-			{
-				Type: "Коврик",
-			},
-
-			{
-				Type: "Зеркало",
 			},
 		},
 	}
@@ -285,26 +222,6 @@ func Make() Home {
 				Length: 170,
 				Width:  100,
 				Color:  "Blonde Wood",
-				Items:  MyRoomFurnituresThingsDressingArea,
-			},
-		},
-	}
-
-	hallwayFurnituresThingsСloset1 := items.Items{
-		[]items.Item{
-			{
-				Type: "Зимняя одежда",
-			},
-			{
-				Type: "Пакет с пакетами для приличных поводов",
-			},
-		},
-	}
-
-	hallwayFurnituresThingsСloset2 := items.Items{
-		[]items.Item{
-			{
-				Type: "Обувь",
 			},
 		},
 	}
@@ -316,14 +233,12 @@ func Make() Home {
 				Length: 200,
 				Width:  100,
 				Color:  "Brown",
-				Items:  hallwayFurnituresThingsСloset1,
 			},
 			{
 				Type:   "Обувница",
 				Length: 100,
 				Width:  80,
 				Color:  "Brown",
-				Items:  hallwayFurnituresThingsСloset2,
 			},
 		},
 	}
