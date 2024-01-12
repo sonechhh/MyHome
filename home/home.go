@@ -1,4 +1,4 @@
-package main
+package home
 
 import (
 	"MyHome/home/family"
@@ -156,12 +156,12 @@ func Make() Home {
 	hallwayDevices := device.Devices{
 		[]device.Device{
 			{
-				Type:    "Робот-пылесос",
-				Name:    "Legee-7",
-				Company: "Hobot",
-				Length:  33,
-				Width:   34,
-				Color:   "Blue-Black",
+				Type:    "Умная колонка",
+				Name:    "Алиса",
+				Company: "Яндекс",
+				Length:  10,
+				Width:   10,
+				Color:   "Violet",
 				Count:   1,
 			},
 		},
