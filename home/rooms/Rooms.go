@@ -24,14 +24,6 @@ func (rooms Rooms) countSquare() float32 {
 	return resSquare
 }
 
-func (rooms Rooms) countVolume() float32 {
-	var resVolume float32 = 0
-	for _, room := range rooms.Rooms {
-		resVolume += room.countVolume()
-	}
-	return resVolume
-}
-
 func (rooms Rooms) RoomsInfo() string {
 	resString := ""
 	if len(rooms.Rooms) > 0 {
@@ -40,7 +32,7 @@ func (rooms Rooms) RoomsInfo() string {
 	for i, room := range rooms.Rooms {
 		resString += room.getRoomString() + room.Furnitures.FurnitureInfo() + room.Devices.DevicesInfo()
 		if (i + 1) != len(rooms.Rooms) {
-			resString += "\t\t------------------------\n"
+			resString += "\t\t++++++++++++++++++\n"
 		}
 	}
 	return resString
@@ -49,7 +41,6 @@ func (rooms Rooms) RoomsInfo() string {
 func (home Rooms) GeneralRoomParameters() string {
 	resString := ""
 	resString += "\tПлощадь: " + fmt.Sprint(home.countSquare()) + " м^2\n" +
-		"\tОбъем: " + fmt.Sprint(home.countVolume()) + " м^3\n" +
 		"\tКоличество окон: " + fmt.Sprint(home.countWindows())
 	return resString
 }

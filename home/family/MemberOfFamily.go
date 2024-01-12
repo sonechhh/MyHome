@@ -4,18 +4,18 @@ import "fmt"
 
 type MemberOfFamily struct {
 	Name    string
-	Sex     string
+	Color   string
 	Age     int
 	Address string
-	Height  int
+	Food    string
 }
 
 func (member MemberOfFamily) getMemberOfFamilyString() string {
 	resString := ""
 	resString += "\t\tИмя: " + member.Name + "\n" +
-		"\t\tПол: " + member.Sex + "\n" +
+		"\t\tЛюбимый цвет: " + member.Color + "\n" +
 		"\t\tВозраст: " + fmt.Sprint(member.Age) + "\n" +
 		"\t\tАдрес проживания: " + member.Address + "\n" +
-		"\t\tРост: " + fmt.Sprint(member.Height) + "\n"
+		"\t\tЛюбимое блюдо: " + member.Food + "\n"
 	return resString
 }

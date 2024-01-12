@@ -16,7 +16,7 @@ type Home struct {
 }
 
 func (home Home) HomeInfo() {
-	fmt.Println("\nДом семьи " + home.FamilySurname + ":")
+	fmt.Println("\n Квартира " + home.FamilySurname + ":")
 	fmt.Println(home.Rooms.GeneralRoomParameters())
 	fmt.Print(home.Family.FamilyInfo())
 	fmt.Print(home.Rooms.RoomsInfo())
@@ -26,32 +26,32 @@ func Make() Home {
 	me := family.MemberOfFamily{
 		Name:    "Соня",
 		Age:     20,
-		Sex:     "Ж",
+		Color:   "Тёмно-синий",
 		Address: "Монакская, 33",
-		Height:  164,
+		Food:    "Макароны с сыром",
 	}
 
 	mom := family.MemberOfFamily{
 		Name:    "Яна",
 		Age:     43,
-		Sex:     "Ж",
+		Color:   "Сиреневый",
 		Address: "Миланская, 12",
-		Height:  165,
+		Food:    "Жареная картошка",
 	}
 
 	dad := family.MemberOfFamily{
 		Name:    "Денис",
 		Age:     43,
-		Sex:     "М",
+		Color:   "Зеленый",
 		Address: "Танковая, 2",
-		Height:  186,
+		Food:    "Борщ",
 	}
 	dog := family.MemberOfFamily{
 		Name:    "Ёся",
 		Age:     12,
-		Sex:     "М",
+		Color:   "Красный",
 		Address: "Калмыкия -",
-		Height:  30,
+		Food:    "Буквально всё",
 	}
 
 	MyRoomDevices := device.Devices{

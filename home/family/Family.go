@@ -12,7 +12,7 @@ func (family Family) FamilyInfo() string {
 	for i, member := range family.MemberOfFamilyArr {
 		resString += member.getMemberOfFamilyString()
 		if (i + 1) != len(family.MemberOfFamilyArr) {
-			resString += "\t\t------------------------\n"
+			resString += "\t\t++++++++++++++++++\n"
 		}
 	}
 	return resString
